@@ -86,3 +86,14 @@ body{
     }
 }
 
+.Experiences{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+}    
+
+.Experiences h2{
+    border: 1px solid var(--color-text-primary);
+}
