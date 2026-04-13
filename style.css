@@ -111,16 +111,13 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 10rem;
+    color: var(--color-text-primary);
 }
 
-.experience-card img{
-    width: 600px;
-    height: 500px;
-    object-fit: contain;
-}
-
-.Experiences h2{
+.Experiences-content p{
     border: 1px solid var(--color-text-primary);
-    padding: 1rem;
+    padding: 10px;
+    border-radius: 0.5em;
+    width: 500px;
 }
