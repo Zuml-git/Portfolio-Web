@@ -56,10 +56,12 @@ body{
     align-items: center;
     height: 50vh;
     color: var(--color-text-primary);
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 }
 
 .hero-title{
@@ -86,14 +88,39 @@ body{
     }
 }
 
+.Experiences-title{
+    padding-top: 5rem;
+    text-align: center;
+    color: var(--color-text-primary);
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
 .Experiences{
+    padding-top: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
     text-align: center;
 }    
 
+.Experiences-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.experience-card img{
+    width: 600px;
+    height: 500px;
+    object-fit: contain;
+}
+
 .Experiences h2{
     border: 1px solid var(--color-text-primary);
+    padding: 1rem;
 }
