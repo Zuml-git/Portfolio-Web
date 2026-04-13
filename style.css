@@ -3,6 +3,7 @@
     --color-text-primary: #ff36ab;
     --color-text-experience: greenyellow;
     --color-border-experience: rgb(0, 87, 4);
+    --color-text-footer: rgb(241, 232, 232);
 }
 
 body{
@@ -14,7 +15,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5rem;
+    padding: 1rem 3rem;
     background-color: var(--color-background);
     color: var(--color-text-primary);
     font-size: 1.2rem;
@@ -50,6 +51,31 @@ body{
 
 .navbar-menu :hover{
     filter: opacity(0.5);
+}
+
+.icone-link-main{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 20px;
+}
+
+.nav-icon-link{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+}
+
+.nav-icon-link svg,
+.nav-icon-img{
+    display: block;
+}
+
+.nav-icon-img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
 }
 
 .hero{
@@ -120,7 +146,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid var(--color-border-experience);
+    border: 2px solid var(--color-border-experience);
     padding: 10px;
     border-radius: 0.5em;
     width: 500px;
@@ -139,4 +165,14 @@ body{
     padding-top: 10px;
     text-align: center;
     color: var(--color-text-experience);
+}
+
+footer{
+    border-top: 1px solid var(--color-text-primary);
+    margin-top: 30px;
+}
+
+footer p{
+    color: var(--color-text-footer);
+    margin: 30px;
 }
