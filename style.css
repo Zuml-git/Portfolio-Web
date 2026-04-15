@@ -4,6 +4,7 @@
     --jet: hsl(0, 0%, 22%);
     --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
     --text-nav-link: hsl(0, 0%, 84%);
+    --text-about-me: hsl(0, 0%, 84%);
 }
 
 *{
@@ -97,7 +98,21 @@ body{
     padding-left: 24px;
   }
 
-.Aboutme span{
+#Aboutme span{
     display: inline-block;
     font-size: 30px;
+    color: var(--text-about-me);
+    border-bottom: 3px solid var(--text-about-me);
+    margin: 30px;
+    border-radius: 10px;
+    margin-bottom: 0;
+    font-family: 'bc-barell', sans-serif;
 }
+
+#Aboutme p{
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 40px;
+    color: var(--text-about-me);
+  }
