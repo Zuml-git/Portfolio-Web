@@ -157,9 +157,7 @@ body{
     display: inline-block;
     font-size: 30px;
     color: var(--text-about-me);
-    border-bottom: 3px solid var(--text-about-me);
-    margin: 30px;
-    border-radius: 10px;
+    margin: 30px; 
     margin-bottom: 0;
     font-family: 'bc-barell', sans-serif;
 }
@@ -176,9 +174,7 @@ body{
     display: inline-block;
     font-size: 30px;
     color: var(--text-about-me);
-    border-bottom: 3px solid var(--text-about-me);
     margin: 30px;
-    border-radius: 10px;
     margin-bottom: 0;
     font-family: 'bc-barell', sans-serif;
 }
@@ -195,9 +191,7 @@ body{
     display: inline-block;
     font-size: 30px;
     color: var(--text-about-me);
-    border-bottom: 3px solid var(--text-about-me);
     margin: 30px;
-    border-radius: 10px;
     margin-bottom: 0;
     font-family: 'bc-barell', sans-serif;
 }
@@ -214,9 +208,7 @@ body{
     display: inline-block;
     font-size: 30px;
     color: var(--text-about-me);
-    border-bottom: 3px solid var(--text-about-me);
     margin: 30px;
-    border-radius: 10px;
     margin-bottom: 0;
     font-family: 'bc-barell', sans-serif;
 }
