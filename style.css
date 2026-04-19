@@ -175,7 +175,7 @@ body{
     color: var(--text-about-me);
 }
 
-#Accueil span{
+#Accueil .Acc{
     display: inline-block;
     font-size: 30px;
     color: var(--text-about-me);
@@ -192,4 +192,24 @@ body{
     margin: 0 auto;
     margin-top: 40px;
     color: var(--text-about-me);
+}
+
+.blaze::before{
+    animation: blaze infinite 5s;
+    content: '';
+}
+
+@keyframes blaze{
+    0%, 33.33%{
+        content: 'Web Developper';
+        color: red;
+    }
+    33.34%, 66.66%{
+        content: 'Etudiant';
+        color: aquamarine;
+    }
+    66.67%, 100%{
+        content: 'UI/UX Designer';
+        color: greenyellow;
+    }
 }
