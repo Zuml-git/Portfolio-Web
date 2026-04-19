@@ -11,6 +11,15 @@ html{
     font-family: 'Poppins', sans-serif;
 }
 
+.page-content{
+    animation: arrivee 900ms ease-out both;
+}
+
+@keyframes arrivee{
+    from{ opacity: 0; transform: translateY(40px); }
+    to{ opacity: 1; transform: translateY(0); }
+}
+
 body{
     background: var(--background-color);
     margin: 0;
@@ -45,6 +54,13 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+
+  animation: arrivee-nav 900ms ease-out both;
+}
+
+@keyframes arrivee-nav{
+    from{ opacity: 0; }
+    to{ opacity: 1 ; }
 }
 
 .navbar a, .navbar a:visited{
@@ -89,6 +105,15 @@ body{
     margin-top: 20px;
 }
 
+.main-accueil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 150px;
+}
+
 .main-contact{
     display: flex;
     flex-direction: column;
@@ -101,6 +126,16 @@ body{
 .mainbox{
     width: 1000px;
     height: 1200px;
+    background: var(--eerie-black-2);
+    border-radius: 20px;
+    border: 1px solid var(--jet);
+    padding-top: 24px; 
+    padding-left: 24px;
+}
+
+.mainbox-accueil{
+    width: 1000px;
+    height: 400px;
     background: var(--eerie-black-2);
     border-radius: 20px;
     border: 1px solid var(--jet);
@@ -197,19 +232,29 @@ body{
 .blaze::before{
     animation: blaze infinite 5s;
     content: '';
+    font-size: 50px;
 }
 
 @keyframes blaze{
     0%, 33.33%{
         content: 'Web Developper';
-        color: red;
+        color: rgb(255, 0, 0);
+        text-shadow:
+            0 0 6px rgba(255, 0, 0, 0.9),
+            0 0 18px rgba(255, 0, 0, 0.55);
     }
     33.34%, 66.66%{
         content: 'Etudiant';
-        color: aquamarine;
+        color: rgb(127, 255, 212);
+        text-shadow: 
+            0 0 6px rgba(127, 255, 212, 0.9),
+            0 0 18px rgba(127, 255, 212, 0.55);
     }
     66.67%, 100%{
         content: 'UI/UX Designer';
-        color: greenyellow;
+        color: rgb(173, 255, 47);
+        text-shadow: 
+            0 0 6px rgba(173, 255, 47, 0.9),
+            0 0 18px rgba(173, 255, 47, 0.55);
     }
 }
