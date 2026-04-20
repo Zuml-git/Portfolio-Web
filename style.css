@@ -1,5 +1,6 @@
 :root{
     --main-font-familly: 'Poppins';
+    --2-font-familly: 'bc-barell';
 
     --background-color: hsl(0, 0%, 7%);
     --eerie-black-2: hsl(240, 2%, 12%);
@@ -244,7 +245,7 @@ body{
     color: var(--text-about-me);
     margin: 30px;
     margin-bottom: 0;
-    font-family: 'bc-barell', sans-serif;
+    font-family: var(--2-font-familly), sans-serif;
 }
 
 #Accueil p{
@@ -261,7 +262,7 @@ body{
     color: var(--text-about-me);
     margin: 30px; 
     margin-bottom: 0;
-    font-family: 'bc-barell', sans-serif;
+    font-family: var(--2-font-familly), sans-serif;
 }
 
 #Aboutme p{
@@ -278,7 +279,7 @@ body{
     color: var(--text-about-me);
     margin: 30px;
     margin-bottom: 0;
-    font-family: 'bc-barell', sans-serif;
+    font-family: var(--2-font-familly), sans-serif;
 }
 
 #Contact p{
@@ -295,7 +296,7 @@ body{
     color: var(--text-about-me);
     margin: 30px;
     margin-bottom: 0;
-    font-family: 'bc-barell', sans-serif;
+    font-family: var(--2-font-familly), sans-serif;
 }
 
 #experience p{
@@ -307,7 +308,7 @@ body{
 }
 
 .blaze::before{
-    animation: blaze infinite 5s;
+    animation: blaze infinite 7s;
     content: '';
     font-size: 50px;
 }
@@ -323,25 +324,34 @@ body{
 }
 
 @keyframes blaze{
-    0%, 33.33%{
+    0%, 30.83%{
         content: 'Web Developper';
         color: var(--color-web-dev-1);
         text-shadow:
             0 0 6px var(--color-web-dev-2),
             0 0 18px var(--color-web-dev-3);
     }
-    33.34%, 66.66%{
+    30.84%, 35.83%{
+        content: '';
+    }
+    35.84%, 64.16%{
         content: 'Etudiant';
         color: var(--color-etudiant-1);
         text-shadow: 
             0 0 6px var(--color-etudiant-2),
             0 0 18px var(--color-etudiant-3);
     }
-    66.67%, 100%{
+    64.17%, 69.16%{
+        content: '';
+    }
+    69.17%, 95%{
         content: 'UI/UX Designer';
         color: var(--color-UI-UX-Designer-1);
         text-shadow: 
             0 0 6px var(--color-UI-UX-Designer-2),
             0 0 18px var(--color-UI-UX-Designer-3);
+    }
+    96%, 100%{
+        content: '';
     }
 }
